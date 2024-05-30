@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Gentona';
+  src: local('Gentona'),
+       url('./fonts/Gentona-Book.otf') format('opentype'); 
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Gentona', 'Times New Roman', Times, serif;
+}
