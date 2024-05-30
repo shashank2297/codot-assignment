@@ -1,21 +1,15 @@
 import "../css/style.css"
-import SideBar from "./sidebar"
-import Hoverbar from "./hoverbar"
-import { useState } from "react"
+import Sidebar from "./sidebar"
 import Cardsection from "./cardssection"
 import Footer from "./footer"
 
 function Main() {
 
-    const [isHovered, setIsHovered] = useState(false);
-
     return (
         <>
-            <main style={{ gridTemplateColumns: isHovered ? '20% 75% 5%' : '5% 90% 5%' }}>
-                <section className="sidebar" onMouseEnter={() => setIsHovered(true)}
-                    onMouseLeave={() => setIsHovered(false)}>
-                    {isHovered ? (
-                        <Hoverbar />) : (<SideBar />)}
+            <main >
+                <section>
+                        <Sidebar />
                 </section>
                 <section className="header">
                     <p className="heading">Hi Suman,</p>

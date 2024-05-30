@@ -1,10 +1,7 @@
 @media only screen and (min-width: 1440px) {
-
     .cards {
         grid-template-columns: repeat(3, 1fr) !important;
     }
-
-
 }
 
 
@@ -27,43 +24,10 @@
 
 }
 
-
-
 main {
     display: grid;
     grid-template-columns: 5% 90% 5%;
 }
-
-
-/* Sidebar CSS starts Here */
-
-
-.sidebar {
-    text-align: center;
-    padding: 20px 0 0 0;
-    background-color: rgba(243, 247, 249, 1);
-
-    .icons-1 {
-        display: flex;
-        flex-direction: column;
-        margin: 0 0 220px 0;
-
-        span {
-            margin: 0 0 20px 0;
-        }
-    }
-
-    .icons-2 {
-        display: flex;
-        flex-direction: column;
-
-        span {
-            margin: 0 0 20px 0;
-        }
-    }
-}
-
-/* Sidebar CSS ends here */
 
 /* Header CSS starts here */
 
@@ -261,41 +225,99 @@ main {
     top: 50%;
     right: -60px;
     transform: translateY(-50%);
+
+    p {
+        transform: rotate(270deg);
+        border-radius: 10px 0px 0px 10px;
+        background-color: rgba(139, 255, 220, 1);
+        padding: 5px;
+    }
 }
 
-.feedback p {
-    transform: rotate(270deg);
-    border-radius: 10px 0px 0px 10px;
-    background-color: rgba(139, 255, 220, 1);
-    padding: 5px;
+/* Feedback ends Here */
+
+/* Sidebar starts here */
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65px;
+    height: 200vh;
+    transition: width 0.3s ease;
+    z-index: 1000;
+    background-color: #f4f4f4;
+    overflow: hidden;
+    text-align: center;
+
+    &:hover {
+        width: 230px;
+    }
 }
 
-/* HoverBoard Starts here */
-
-.hicons-1 {
-    margin: 0 0 200px 0;
-}
-
-.hicons-1 p,
-.hicons-2 p {
+.hicons {
     display: flex;
-    align-items: center;
-    margin: 10px;
-    size: 24px;
-    font-weight: 500;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 10px;
+    margin: 10px 0 0 0;
 
+    .hicons-1 {
+        margin-bottom: 200px;
+    }
+
+    p {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+        font-weight: 500;
+        padding: 10px;
+
+        &:hover {
+            border: 1px solid rgba(222, 232, 236, 1);
+            border-radius: 5px;
+            background-color: white;
+            width: 190px;
+            cursor: pointer;
+        }
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+
+    .item-name {
+        display: none;
+        white-space: nowrap;
+    }
 }
 
+.sidebar:hover {
 
-.hicons-1 p span,
-.hicons-2 p span {
-    margin-right: 10px;
+    .hicons-1 .item-name,
+    .hicons-2 .item-name {
+        display: inline;
+    }
 }
 
-.hicons-1 p:hover,
-.hicons-2 p:hover {
-    border: 1px solid rgba(222, 232, 236, 1);
-    border-radius: 5px;
-    background-color: white;
+/* Sidebar ends here */
+
+/* Prayaan Page starts here */
+
+.prayaan{
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+
+    .prayaan_content{
+        margin: 20px;
+    }
+}
+
+.link{
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    font-size: 16px;
 }

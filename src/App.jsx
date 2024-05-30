@@ -1,11 +1,10 @@
-import Main from "./components/main"
+import Routing from "../routing"
 
 function App() {
-  
 
   return (
     <>
-      <Main/>
+      <Routing />
     </>
   )
 }
