@@ -306,16 +306,16 @@ main {
 
 /* Prayaan Page starts here */
 
-.prayaan{
+.prayaan {
     display: grid;
     grid-template-columns: 5% 90% 5%;
 
-    .prayaan_content{
+    .prayaan_content {
         margin: 20px;
     }
 }
 
-.link{
+.link {
     text-decoration: none;
     font-weight: 500;
     color: black;
